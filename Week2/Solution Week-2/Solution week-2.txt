@@ -44,6 +44,9 @@ sqlite> insert into stud_details values(10,'surat',7456889002);
 --->3. Display whose student come from the Surat City.
 
 sqlite> select stud1.id,name ,city, mobileno from stud_details inner join stud1 on stud1.id=stud_details.id and city ='surat';
+
+-->output:
+
 1|om|surat|9988745212
 4|vidhi|surat|4554787452
 7|yug|surat|7485889002
@@ -53,6 +56,9 @@ sqlite> select stud1.id,name ,city, mobileno from stud_details inner join stud1 
 
 
 sqlite> select stud1.id,name ,city, mobileno from stud_details inner join stud1 on stud1.id=stud_details.id and city like 'b%';
+
+-->output:
+
 2|sai|bardoli|9988748454
 6|ved|baben|7458452002
 8|keval|bhuj|9966889002
